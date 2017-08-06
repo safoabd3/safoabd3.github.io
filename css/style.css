@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  font: 100%/1.5 'Raleway', sans-serif;
+  background: url(http://insights.dice.com/wp-content/uploads/2011/07/cisco.jpg) no-repeat center center fixed;
+  color: #ddd;
+}
+
+header {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #555;
+}
+header #logo {
+  margin-top: .5em;
+  margin-bottom: .25em;
+  text-align: center;
+}
+header #description {
+  text-align: center;
+}
+header nav {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #333;
+}
+header nav ul {
+  display: block;
+  float: left;
+  width: 100%;
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+  color: #eee;
+  transition: 0.5s ease all;
+  -webkit-transition: 0.5s ease all;
+  -moz-transition: 0.5s ease all;
+  -o-transition: 0.5s ease all;
+  -ms-transition: 0.5s ease all;
+}
+header nav ul li a:hover {
+  background-color: #222;
+}
+
+.container {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+section {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.page-holder {
+  position: relative;
+}
+
+.page {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  margin: 40px auto;
+  background: rgba(10, 10, 10, 0.7);
+  width: 100%;
+  max-width: 960px;
+  border-radius: 5px;
+  padding-bottom: 32px;
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* Important for transition effect */
+}
+.page h2 {
+  text-align: center;
+}
+
+/* Typography ---------------*/
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: .6666667em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin-bottom: .6666667em;
+}
+
+h3 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin-bottom: .6666667em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  text-align: center;
+}
