@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+@mixin transition($time) {
+  transition: $time ease all;
+  -webkit-transition: $time ease all;
+  -moz-transition: $time ease all;
+  -o-transition: $time ease all;
+  -ms-transition: $time ease all;
+}
+
+body {
+  font: 100%/1.5 'Raleway', sans-serif;
+  background-color: hsla(160, 75%, 35%, 1);
+  color: #ddd;
+}
+
+header {
+  display: block;
+  float: left;
+  width: 100%;
+  background-color: #555;
+  
+  #logo {
+    margin-top: .5em;
+    margin-bottom: .25em;
+    text-align: center;
+  }
+  
+  #description {
+    text-align: center;
+  }
+  
+  nav {
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: #333;
+    
+    ul {
+      display: block;
+      float: left;
+      width: 100%;
+      list-style:none;
+      
+      li a {
+        display: block;
+        float: left;
+        padding: .5em 1em;
+        text-decoration: none;
+        color: #eee;
+        @include transition(0.5s);
+        
+        &:hover {
+          background-color: #222;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  width: 75%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  clear:both;
+  float:left;
+  width: 100%;
+}
+
+section {
+  display: block;
+  clear: both;
+  float: left;
+  width: 100%;
+}
+
+.page-holder {
+  position: relative;
+}
+
+.page {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Important for transition effect */
+  
+  h2 {
+    text-align: center;
+  }
+}
+
+/* Typography ---------------*/
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: .6666667em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin-bottom: .6666667em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
