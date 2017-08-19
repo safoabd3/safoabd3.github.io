@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
   font: 100%/1.5 'Raleway', sans-serif;
-  background: url(http://insights.dice.com/wp-content/uploads/2011/07/cisco.jpg) no-repeat center center fixed;
+  background: url(/background/cisco.jpg) no-repeat center center fixed;
   color: #ddd;
 }
 
